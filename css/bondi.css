@@ -1,0 +1,240 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color:  #ff3150;
+    --yel-low: #ffc400;
+    --section-color: #eff7fa;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    color: var(--yel-low);
+}
+body{
+font-family: "Roboto", sans-serif;
+}
+.main-btn{
+    background-color: var(--red-color);
+    padding: .5rem 1rem;
+    color:var(--yel-low) ;
+    border: none;
+    cursor: pointer;
+}
+.main-title::after{
+content: "";
+position: absolute;
+width: 120px;
+height: 2px;
+bottom: -20px;
+left: 50%;
+transform: translateX(-50%);
+background-color: var(--dark-color);
+}
+/*start navbar */
+.navbar{
+    background-color: var(--dark-color);
+    color: white;
+    
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+    
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus{
+    color: var(--green-color);
+}
+.search{
+    border-left: 1px solid;
+}
+
+.landing{
+    color: white;
+    background-color: var(--dark-color);
+min-height: calc(100vh - 72px);
+}
+/* start features */
+.features .icons{
+    height: 200px;
+}
+.features .icons svg{
+left: 50%;
+transform: translateX(-50%);
+}
+.features .icons .number{
+    font-size: 12rem;
+    color:var(--section-color) ;
+}
+.features .icons .icon{
+    color:var(--green-color) ;
+
+}
+.features h4{
+    color: var(--yel-low);
+}
+
+/* end features */
+
+/* start make */
+.make{
+    background-color: var(--section-color);
+}
+.make ul .active{
+    background-color: var(--red-color);
+    color: var(--yel-low);
+}
+.make ul li{
+    padding: .5rem 1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+.make ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.make .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.make .box::before{
+    content: attr(data-make) ;
+    position: absolute;
+    background-color: #33d1ccea;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: .3s;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transform: translateX(calc(-100% - 10px));
+    
+}
+.make .box:hover:before{
+    transform: translateX(0);
+
+}
+
+/* end make */
+
+/* start  about */
+.about .description{
+    max-width: 500px;
+}
+@media(max-width:767px){
+    .about .texts{
+        text-align: center;
+    }
+}
+
+/* end about */
+
+/* start team */
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yel-low);
+    font-weight: bold;
+}
+.team .box{
+    background-color: white;
+}
+.team .box h3{
+    background-color: var(--green-color);
+    color: white;
+}
+/* end team */
+
+/* start project */
+
+.Project{
+    background-color: var(--dark-color);
+}
+
+/* start project */
+
+/* start our blog */
+.ourBlog .box .card-body{
+border: 1px solid rgba(51, 51, 51, 0.151);
+text-align: start;
+padding: 1rem 1.5rem;
+}
+/* End our blog */
+
+/* start Subscribe */
+.Subscribe{
+background-color: var(--yel-low);
+}
+.Subscribe h5{
+    color: var(--dark-color);
+    font-weight: bold;
+}
+.Subscribe input[type="text"]{
+    color: white;
+
+    border: none;
+    border-bottom: 1px solid white;
+}
+.Subscribe input[type="text"]:focus{
+    outline: none;
+}
+
+.Subscribe input[type="submit"]{
+    background-color: var(--dark-color);
+    color: var(--yel-low);
+}
+/* End Subscribe */
+
+/* start footer */
+footer{
+    background-color: var(--dark-color);
+}
+footer .copyright span:first-child{
+color: var(--green-color);
+}
+footer .copyright span:last-child{
+    color:var(--yel-low);
+    }
+footer .row h5{
+    color: white;
+}
+footer li,
+footer i{
+    cursor: pointer;
+    padding:  5px 0;
+}
+footer li:hover{
+    color: white;
+}
+footer .row .contcat ul svg{
+    width: 20px;
+    height: 20px;
+
+}
+footer .youtube {
+    background-color: #ff0000;
+}
+footer .facebook {
+    background-color: #1877f2;
+}
+footer .twitter {
+    background-color: #1da1f2;
+}
+footer .linkedin {
+    background-color: #0077b5;
+}
+
+/* End footer */
